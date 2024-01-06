@@ -15,8 +15,6 @@ struct Args {
 
 fn main() -> std::io::Result<()> {
     let args = Args::parse();
-    println!("Hello {}!", args.typescript);
-    println!("Hello {}!", args.directory);
     let current_project = if args.typescript {
         "express-api-starter-ts"
     } else {
@@ -58,9 +56,4 @@ fn main() -> std::io::Result<()> {
 
     println!("Done");
     Ok(())
-    // println!("{}", say_hello());
 }
-
-// fn say_hello() -> String {
-//     return "Hello, world!".to_string();
-// }
